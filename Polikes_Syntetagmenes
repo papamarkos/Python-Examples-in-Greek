@@ -1,1 +1,6 @@
-
+import math    # εισάγουμε την βιβλιοθήκη
+x=float(input("Δώσε το to x:"))
+y=float(input("Δώσε το to y:"))
+r=math.sqrt(x**2+y**2) # η sqrt υπολογίζει την τετραγωνική ρίζα.
+th=math.degrees(math.atan(y/x))
+print("r=",r,"θ=",th, " μοίρες")
