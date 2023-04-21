@@ -1,0 +1,21 @@
+import math
+
+# Διαβάζουμε τις τιμές των συντεταγμένων
+a1 = float(input("Δώστε την τιμή του a1: "))
+a2 = float(input("Δώστε την τιμή του a2: "))
+b1 = float(input("Δώστε την τιμή του b1: "))
+b2 = float(input("Δώστε την τιμή του b2: "))
+
+# Υπολογίζουμε το συνημίτονο της γωνίας θ
+dot_product = a1 * b1 + a2 * b2
+norm_a = math.sqrt(a1 ** 2 + a2 ** 2)
+norm_b = math.sqrt(b1 ** 2 + b2 ** 2)
+costh = dot_product / (norm_a * norm_b)
+
+# Υπολογίζουμε τη γωνία θ σε μοίρες
+radians = math.acos(costh)
+goniath = math.degrees(radians)
+
+# Εμφανίζουμε τα αποτελέσματα
+print("Το συνημίτονο της γωνίας θ είναι:", costh)
+print("Η γωνία θ σε μοίρες είναι:", goniath)
