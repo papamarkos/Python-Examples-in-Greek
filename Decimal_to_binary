@@ -1,0 +1,11 @@
+def convert(n):
+    if n == 0:
+        return ''
+    else:
+        return convert(n // 2) + str(n % 2)
+
+decimal = int(input("Δώσε τον δεκαδικό αριθμό: "))
+binary = convert(decimal)
+print("Η δυαδική αναπαράσταση του ", decimal, "είναι", binary)
+print(" αλλοιώς")
+print("Ο δεκαδικός ", decimal, " αντιστοιχεί με τον δυαδικό:",binary)
