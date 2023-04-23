@@ -1,0 +1,11 @@
+def my_min(*args):
+    if len(args) == 0:
+        return None
+    else:
+        min_val = args[0]
+        for arg in args:
+            if arg < min_val:
+                min_val = arg
+        return min_val
+
+print(my_min(8, 13, 4, 42, 120, 7))
